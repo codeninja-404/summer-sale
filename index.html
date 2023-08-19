@@ -1,18 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Summer Sale</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              work: ["Work Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-work">
     <header>
-
+      <div class="hero bg-[#F9F6E2]">
+        <div class="hero-content flex-col lg:flex-row-reverse lg:p-16 bg-[#F9F6E2]">
+          <img src="/images/Summer 1.png" class="max-w-lg  " />
+          <div class="text-center space-y-6 ">
+            <h3 class="text-2xl font-medium">---SALE FEVER---</h3>
+            <h1 class="text-5xl font-bold lg:w-4/5 mx-auto">
+              Purchase TK 200 or above & get
+              <span class="text-[#E527B2]">20% off</span>
+            </h1>
+            <p class="py-6 lg:w-3/4 mx-auto text-xl font-medium">
+              Use Promo Code
+              <button class="btn bg-[#E527B2] hover:bg-lime-400 text-white text-xl">
+                SELL200
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
-    <main>
-        
-    </main>
-</body>
+    <main></main>
+  </body>
 </html>

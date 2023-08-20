@@ -7,11 +7,8 @@ function cardClick(data) {
   const p = document.createElement("p");
   p.innerText = `${count + 1}. ${itemName}`;
   itemsListContainer.appendChild(p);
-  const price = parseFloat(
-    data.childNodes[3].childNodes[5].childNodes[0].innerText
-  );
-  total = total + price;
-  document.getElementById("total-p").innerText = total;
+  const price = data.childNodes[3].childNodes[5].childNodes[0].innerText;
+  total = parseFloat(total) + parseFloat(price);
+  document.getElementById("total-p").innerText = total.toFixed(2);
   console.log(total);
-  
 }

@@ -67,9 +67,12 @@
         <div class="md:w-w-2/3 lg:w-3/4">
           <!-- Kitchenware section -->
           <h1 class="text-4xl font-bold py-8">Kitchenware</h1>
-          <div  class="grid xsm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="grid xsm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- CARD 1 IN KIT -->
-            <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl border-2 ">
+            <div
+              onclick="cardClick(this)"
+              class="card bg-base-100 shadow-xl border-2"
+            >
               <figure class="px-10 py-5 bg-gray-200 m-4 rounded-md">
                 <img src="/images/prod1.png" alt="Shoes" class=" " />
               </figure>
@@ -107,7 +110,10 @@
               </div>
             </div>
             <!-- CARD 2 IN KIT -->
-            <div onclick=" cardClick(this)" class="card bg-base-100 shadow-xl border-2">
+            <div
+              onclick=" cardClick(this)"
+              class="card bg-base-100 shadow-xl border-2"
+            >
               <figure class="px-10 py-5 bg-gray-200 m-4 rounded-md">
                 <img src="/images/prod2.png" alt="Shoes" class=" " />
               </figure>
@@ -145,7 +151,10 @@
               </div>
             </div>
             <!-- CARD 3 IN KIT -->
-            <div onclick=" cardClick(this)" class="card bg-base-100 shadow-xl border-2">
+            <div
+              onclick=" cardClick(this)"
+              class="card bg-base-100 shadow-xl border-2"
+            >
               <figure class="px-10 py-5 bg-gray-200 m-4 rounded-md">
                 <img src="/images/prod3.png" alt="Shoes" class=" " />
               </figure>
@@ -187,8 +196,11 @@
           <h1 class="text-4xl font-bold py-8">Sportswear</h1>
           <div class="grid xsm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- CARD 1 IN spt -->
-            <div class="card bg-base-100 shadow-xl border-2">
-              <figure class="px-10 py-8 bg-gray-200 m-4 rounded-md">
+            <div
+              onclick="cardClick(this)"
+              class="card bg-base-100 shadow-xl border-2"
+            >
+              <figure class="px-10 py-6 bg-gray-200 m-4 rounded-md">
                 <img src="/images/prod4.png" alt="Shoes" class=" " />
               </figure>
               <div class="card-body items-center text-center pt-2">
@@ -225,8 +237,11 @@
               </div>
             </div>
             <!-- CARD 2 IN spt -->
-            <div class="card bg-base-100 shadow-xl border-2">
-              <figure class="px-10 py-3 bg-gray-200 m-4 rounded-md">
+            <div
+              onclick="cardClick(this)"
+              class="card bg-base-100 shadow-xl border-2"
+            >
+              <figure class="px-10 py-4 bg-gray-200 m-4 rounded-md">
                 <img src="/images/prod5.png" alt="Shoes" class=" " />
               </figure>
               <div class="card-body items-center text-center pt-2">
@@ -263,8 +278,11 @@
               </div>
             </div>
             <!-- CARD 3 IN spt -->
-            <div class="card bg-base-100 shadow-xl border-2">
-              <figure class="px-10 py-4 bg-gray-200 m-4 rounded-md">
+            <div
+              onclick="cardClick(this)"
+              class="card bg-base-100 shadow-xl border-2"
+            >
+              <figure class="px-10 py-3 bg-gray-200 m-4 rounded-md">
                 <img src="/images/prod6.png" alt="Shoes" class=" " />
               </figure>
               <div class="card-body items-center text-center pt-2">
@@ -304,7 +322,7 @@
         </div>
         <!-- cart section -->
         <div class="md:w-1/3 lg:w-1/4 mt-2">
-          <div class="mt-6 md:mt-24  space-y-6">
+          <div class="mt-6 md:mt-24 space-y-6">
             <!-- apply coupon part -->
             <div class="bg-[#FFFFFF] py-10 px-5 rounded-2xl border shadow-xl">
               <div class="form-control">
@@ -327,15 +345,17 @@
             <div
               class="bg-[#FFFFFF] py-10 px-5 rounded-2xl border shadow-xl space-y-4 relative"
             >
-              <div id="new-items" class="border-b-2 space-y-4 text-xl font-semibold pb-4">
-                
-            
-              </div>
+              <div
+                id="new-items"
+                class="border-b-2 space-y-4 text-xl font-semibold pb-4"
+              ></div>
 
               <div class="space-y-4 border-b-2">
                 <h3 class="text-xl font-semibold">
                   Total price:
-                  <span  class="text-gray-400"> <span id="total-p">00.00</span>TK</span>
+                  <span class="text-gray-400">
+                    <span id="total-p">00.00</span>TK</span
+                  >
                 </h3>
                 <h3 class="text-xl font-semibold">
                   Discount:
@@ -348,10 +368,29 @@
               </div>
 
               <button
+                onclick="my_modal_1.showModal()"
                 class="w-5/6 mx-auto btn bg-[#E527B2] hover:bg-lime-400 text-white text-l border-none absolute inset-x-0 -bottom-6"
               >
                 Make Purchase
               </button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box bg-base-100 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img src="/images/congo.png" alt="Shoes" class="mx-auto" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-5xl font-bold py-2">Congratulations</h2>
+                    <p>Your Purchase of the product is Complete.</p>
+                    <div class="card-actions">
+                      <button 
+                        class="modal-action btn bg-[#E527B2] hover:bg-lime-400 text-white text-xl"
+                      >
+                      Go Home
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
             </div>
           </div>
         </div>

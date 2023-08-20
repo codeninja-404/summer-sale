@@ -16,29 +16,12 @@ function cardClick(data) {
   activeApply();
 }
 
-// function activeMakePurchase() {
-//   const purchase = document.getElementById("purchase");
-//   if (total >= 1) {
-//     purchase.disabled = false;
-//     purchase.classList.add("enabled");
-//   }
-// }
-
-// function activeApply() {
-//   const apply = document.getElementById("apply");
-//   if (total >= 200) {
-//     apply.disabled = false;
-//     apply.classList.add("enabled");
-//   }
-// }
-
 function activeMakePurchase() {
-  condition('purchase',1)
+  condition("purchase", 1);
 }
 function activeApply() {
-  condition('apply',200)
+  condition("apply", 200);
 }
-
 
 function discountApply() {
   const couponField = document.getElementById("coupon");
@@ -52,4 +35,8 @@ function discountApply() {
     document.getElementById("checkout").innerText = finalPrice.toFixed(2);
   }
   couponField.value = "";
+}
+
+function homePage() {
+  window.location.href = "index.html";
 }

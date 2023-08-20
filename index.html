@@ -334,7 +334,10 @@
                     class="input input-bordered w-full"
                     id="coupon"
                   />
-                  <button disabled  onclick="discountApply()" id="apply"
+                  <button
+                    disabled
+                    onclick="discountApply()"
+                    id="apply"
                     class="btn bg-[#E527B2] hover:bg-lime-400 text-white text-xl border-none"
                   >
                     Apply
@@ -358,17 +361,23 @@
                     <span id="total-p">00.00</span>TK</span
                   >
                 </h3>
-                <h3  class="text-xl font-semibold">
+                <h3 class="text-xl font-semibold">
                   Discount:
-                  <span class="text-gray-400"> <span id="discount">00.00</span>TK</span>
+                  <span class="text-gray-400">
+                    <span id="discount">00.00</span>TK</span
+                  >
                 </h3>
                 <h3 class="text-xl font-semibold pb-4">
                   Total:
-                  <span class="text-gray-400"> <span id="checkout">00.00</span>TK</span>
+                  <span class="text-gray-400">
+                    <span id="checkout">00.00</span>TK</span
+                  >
                 </h3>
               </div>
 
-              <button disabled id="purchase"
+              <button
+                disabled
+                id="purchase"
                 onclick="my_modal_1.showModal()"
                 class="w-5/6 mx-auto btn bg-[#E527B2] hover:bg-lime-400 text-white text-l border-none absolute inset-x-0 -bottom-6"
               >
@@ -380,13 +389,15 @@
                     <img src="/images/congo.png" alt="Shoes" class="mx-auto" />
                   </figure>
                   <div class="card-body items-center text-center">
-                    <h2 class="card-title text-5xl font-bold py-2">Congratulations</h2>
+                    <h2 class="card-title text-5xl font-bold py-2">
+                      Congratulations
+                    </h2>
                     <p>Your Purchase of the product is Complete.</p>
                     <div class="card-actions">
-                      <button 
-                        class="modal-action btn  bg-[#E527B2] hover:bg-lime-400 text-white text-xl"
+                      <button onclick="homePage()"
+                        class="modal-action btn bg-[#E527B2] hover:bg-lime-400 text-white text-xl"
                       >
-                      Go Home
+                        Go Home
                       </button>
                     </div>
                   </div>
